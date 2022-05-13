@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CustomButtonDemo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CustomButtonDemo;assembly=CustomButtonDemo">
+
+    <StackLayout
+        Margin="0"
+        Padding="0"
+        HorizontalOptions="CenterAndExpand"
+        Orientation="Vertical"
+        VerticalOptions="Start">
+
+        <Button
+            Margin="0"
+            Padding="0"
+            FontAttributes="Bold"
+            FontSize="14"
+            Text="Button"
+            TextColor="Black" />
+
+        <local:CustomButton
+            Margin="0"
+            Padding="0"
+            FontAttributes="Bold"
+            FontSize="14"
+            HeightRequest="20"
+            Text="Custom Button"
+            TextColor="Black" />
+    </StackLayout>
+
+</ContentPage>
