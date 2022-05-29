@@ -3,18 +3,20 @@
     x:Class="CustomButtonDemo.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:CustomButtonDemo;assembly=CustomButtonDemo">
+    xmlns:local="clr-namespace:CustomButtonDemo;assembly=CustomButtonDemo"
+    BackgroundColor="White">
 
     <StackLayout
-        Margin="0"
+        Margin="0,20,0,0"
         Padding="0"
         HorizontalOptions="CenterAndExpand"
         Orientation="Vertical"
-        VerticalOptions="Start">
+        VerticalOptions="StartAndExpand">
 
         <Button
             FontAttributes="Bold"
             FontSize="14"
+            BackgroundColor="LightGray"
             Text="Button"
             TextColor="Black" />
 
@@ -25,6 +27,7 @@
             FontAttributes="Bold"
             FontSize="20"
             HeightRequest="25"
+            BackgroundColor="LightGray"
             Text="Button"
             TextColor="Black" />
         
@@ -35,6 +38,7 @@
             FontAttributes="Bold"
             HeightRequest="20"
             HorizontalOptions="Start"
+            BackgroundColor="LightGray"
             Text="button"
             TextColor="#36241e"
             VerticalOptions="Center" />
