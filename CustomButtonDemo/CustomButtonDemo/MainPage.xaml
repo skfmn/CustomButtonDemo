@@ -13,21 +13,31 @@
         VerticalOptions="Start">
 
         <Button
-            Margin="0"
-            Padding="0"
             FontAttributes="Bold"
             FontSize="14"
             Text="Button"
             TextColor="Black" />
 
         <local:CustomButton
-            Margin="0"
             Padding="0"
+            HorizontalContentAlignment="Start"
+            VerticalContentAlignment="Center"
             FontAttributes="Bold"
-            FontSize="14"
-            HeightRequest="20"
-            Text="Custom Button"
+            FontSize="20"
+            HeightRequest="25"
+            Text="Button"
             TextColor="Black" />
+        
+        <local:CustomButton
+            Padding="0"
+            HorizontalContentAlignment="Start"
+            VerticalContentAlignment="Center"
+            FontAttributes="Bold"
+            HeightRequest="20"
+            HorizontalOptions="Start"
+            Text="button"
+            TextColor="#36241e"
+            VerticalOptions="Center" />
     </StackLayout>
 
 </ContentPage>

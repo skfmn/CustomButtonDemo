@@ -1,8 +1,10 @@
 ﻿using Android.Content;
+using Android.Views;
 using CustomButtonDemo;
 using CustomButtonDemo.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+
 
 [assembly: ExportRenderer(typeof(CustomButton), typeof(CustomButtonRenderer))]
 namespace CustomButtonDemo.Droid
@@ -20,9 +22,14 @@ namespace CustomButtonDemo.Droid
             {
                 return;
             }
-            var view = (CustomButton)Element;
 
-            view.Padding = new Thickness(0, 0, 0, 0);
+            Control.SetPadding(0, 0, 0, 0);
+            Control.SetAutoSizeTextTypeUniformWithConfiguration(1, 20, 1, 1);
+            Control.SetForegroundGravity(GravityFlags.Right);
+            Control.SetMinimumWidth(0);
+            Control.SetIncludeFontPadding(false);
+            Control.SetMinWidth(0);
+            Control.SetPaddingRelative(0, 0, 0, 0);
         }
     }
 }
