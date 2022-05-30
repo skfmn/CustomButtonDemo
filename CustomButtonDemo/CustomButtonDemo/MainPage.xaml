@@ -11,27 +11,32 @@
         Padding="0"
         HorizontalOptions="CenterAndExpand"
         Orientation="Vertical"
-        VerticalOptions="StartAndExpand">
+        VerticalOptions="StartAndExpand"
+        >
 
         <Button
+             x:Name="btnButton"
             FontAttributes="Bold"
             FontSize="14"
             BackgroundColor="LightGray"
             Text="Button"
             TextColor="Black" />
 
+        <!-- Setting the font size gives strange results-->
         <local:CustomButton
+            x:Name="cbtnButton"
             Padding="0"
             HorizontalContentAlignment="Start"
             VerticalContentAlignment="Center"
             FontAttributes="Bold"
-            FontSize="20"
-            HeightRequest="25"
+            FontSize="14"
+            HeightRequest="20"
             BackgroundColor="LightGray"
             Text="Button"
             TextColor="Black" />
-        
+
         <local:CustomButton
+             x:Name="cbtnButton1"
             Padding="0"
             HorizontalContentAlignment="Start"
             VerticalContentAlignment="Center"
@@ -40,8 +45,9 @@
             HorizontalOptions="Start"
             BackgroundColor="LightGray"
             Text="button"
-            TextColor="#36241e"
+            TextColor="Black"
             VerticalOptions="Center" />
+        
     </StackLayout>
 
 </ContentPage>
